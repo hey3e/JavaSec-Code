@@ -1,3 +1,4 @@
+<!-- CVE-2021-21344 -->
 <java.util.PriorityQueue serialization='custom'>
     <unserializable-parents/>
     <java.util.PriorityQueue>
